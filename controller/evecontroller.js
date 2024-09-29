@@ -2,7 +2,7 @@ const mysql = require('mysql2');
 const multer = require('multer');
 const path = require('path');
 
-// MySQL connection setup
+// MySQL connection setups
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
