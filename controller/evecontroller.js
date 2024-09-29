@@ -6,7 +6,7 @@ const path = require('path');
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    database: 'young_ken_mark',
+    database: 'eve_spotify',
     password: ''
 });
 
@@ -25,10 +25,10 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage }).single('mp3file');
 
 // Controller functions
-const ymk = {
+const eve = {
     // Renders the homepage with the list of MP3 files
     index: (req, res) => {
-        const sql = 'SELECT * FROM young_mp3_files';
+        const sql = 'SELECT * FROM mp3_files';
         db.query(sql, (err, results) => {
             if (err) throw err;
             res.render('index', { files: results }); // Pass MP3 files to the view
@@ -51,7 +51,7 @@ const ymk = {
             }
             
             // Insert file info into the database
-            const sql = 'INSERT INTO young_mp3_files (file_name, file_path) VALUES (?, ?)';
+            const sql = 'INSERT INTO mp3_files (file_name, file_path) VALUES (?, ?)';
             db.query(sql, [req.file.filename, `/uploads/${req.file.filename}`], (err, result) => {
                 if (err) throw err;
                 res.redirect('/'); // Redirect to the homepage after upload
@@ -60,4 +60,4 @@ const ymk = {
     }
 };
 
-module.exports = ymk;
+module.exports = eve;
