@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MP3 Upload and Player</title>
-    <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -52,8 +50,7 @@
             <% files.forEach(function(file) { %>
                 '<%= file.file_path %>',
             <% }) %>
-        
-            ;
+        ]; // Close the array
 
         let currentIndex = -1; // No song is currently playing
 
@@ -70,8 +67,8 @@
             audioPlayer.play();
         }
 
-        // Play button event for list items
-        $('.playBtn').on('click', function() {
+        // Event delegation for play buttons
+        $(document).on('click', '.playBtn', function() {
             const index = $(this).data('index');
             currentIndex = index;
             loadAudio(currentIndex);
