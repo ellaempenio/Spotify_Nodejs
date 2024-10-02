@@ -1,44 +1,44 @@
-/* Full screen background image with fallback color */
+
 body {
-    background: url('path-to-your-image.jpg') no-repeat center center fixed; /* Background image */
-    background-size: cover; /* Ensure image covers the screen */
-    background-color: #343a40; /* Fallback background color */
-    color: #f8f9fa; /* Light text for contrast */
-    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    background: url('path-to-your-image.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    background-color: #343a40; 
+    color: #f8f9fa; 
+    font-family: 'Arial', sans-serif; 
     margin: 0;
     padding: 0;
-    height: 100vh; /* Ensure body takes full height */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    height: 100vh; 
+    overflow-x: hidden; 
 }
 
-/* Center the content within the container */
+
 .container {
     max-width: 1400px;
-    margin: 100px auto; /* Space from the top */
+    margin: 100px auto; 
     padding: 60px;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    background-color: rgba(0, 0, 0, 0.8); 
     border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-    text-align: center; /* Center align text */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+    text-align: center; 
 }
 
-/* Heading styles */
+
 h1 {
     font-size: 3rem;
     font-weight: bold;
     color: #f8f9fa;
     margin-bottom: 30px;
-    letter-spacing: 1.5px; /* Slight spacing for a modern look */
+    letter-spacing: 1.5px; 
 }
 
-/* Subheading text */
+
 h2 {
     font-size: 1.5rem;
     color: #dcdcdc;
     margin-bottom: 40px;
 }
 
-/* Audio player styles */
+
 audio {
     width: 100%;
     margin-top: 20px;
@@ -48,27 +48,27 @@ audio {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* MP3 file list items */
+
 .list-group-item {
-    background-color: rgba(248, 245, 240, 0.85); /* Slightly transparent background */
-    color: #343a40; /* Dark text for contrast */
-    border: none; /* Clean, borderless look */
+    background-color: rgba(248, 245, 240, 0.85); 
+    color: #343a40; 
+    border: none; 
     margin-bottom: 15px;
     border-radius: 8px;
     padding: 5px 10px;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
-/* Hover effect for list items */
+
 .list-group-item:hover {
-    background-color: rgba(244, 246, 247, 0.9); /* Lighter on hover */
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    background-color: rgba(244, 246, 247, 0.9); 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
-/* Styling the controls below the list */
+
 .controls {
     margin-top: 30px;
     display: flex;
@@ -76,23 +76,23 @@ audio {
     gap: 15px;
 }
 
-/* Buttons styling */
+
 .btn-primary,
 .btn-secondary,
 .btn-success {
-    border-radius: 50px; /* Rounded buttons */
+    border-radius: 50px; 
     padding: 12px 25px;
     font-weight: bold;
     font-size: 1.2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease; /* Smooth hover effect */
-    text-transform: uppercase; /* Makes the button text uppercase for emphasis */
+    transition: all 0.3s ease; 
+    text-transform: uppercase; 
 }
 
-/* Button hover effects */
+
 .btn-primary:hover {
     background-color: #0056b3;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly higher shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
     transform: translateY(-3px);
 }
 
@@ -108,10 +108,10 @@ audio {
     transform: translateY(-3px);
 }
 
-/* MP3 upload button positioning */
+
 #upload-mp3-btn {
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
-    color: #212529; /* Dark text */
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #212529; 
     border: none;
     font-weight: bold;
     border-radius: 8px;
@@ -120,13 +120,13 @@ audio {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Upload button hover */
+
 #upload-mp3-btn:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* More visible on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
-/* Optional: Make the design more mobile-friendly */
+
 @media (max-width: 400px) {
     .container {
         padding: 30px;
